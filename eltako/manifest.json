@@ -1,12 +1,13 @@
 {
   "domain": "eltako",
-  "name": "Eltako 14 series",
-  "integration_type": "hub",
-  "documentation": "https://github.com/michaelpiron/home-assistant-eltako",
-  "issue_tracker": "https://github.com/michaelpiron/home-assistant-eltako/issues",
+  "name": "Eltako",
+  "codeowners": ["@bdurrer", "@grimmpp"],
   "dependencies": [],
-  "codeowners": ["@michaelpiron", "@chrysn"],
-  "requirements": ["eltakobus==0.0.7"],
-  "iot_class": "local_polling",
-  "version": "0.0.1"
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/eltako",
+  "integration_type": "hub",
+  "iot_class": "local_push",
+  "loggers": ["eltako"],
+  "version": "0.0.2",
+  "requirements": ["git+https://github.com/JBosecker/eltako14bus.git@fgw14-communication#eltakobus==0.0.26"]
 }
